@@ -5,7 +5,7 @@ node ('kony-win') {
    }
    stage('Build') {
          bat '''
-                cd NewsAndWeather && npm install && D:/nodejs/node.exe build.js
+                npm install && D:/nodejs/node.exe build.js
                 '''
    }
    
