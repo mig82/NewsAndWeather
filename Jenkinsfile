@@ -12,16 +12,16 @@ node ('kony-win') {
                 cd NewsAndWeather && npm install
                 '''
          bat '''
-                set JAVA_HOME=D:\\Java\\jdk1.8.0_192
-                set TMP=C:\\tmp
-                set TEMP=C:\\tmp
-                set APPDATA=C:\\tmp\\AppData
-                set USERPROFILE=C:\\tmp\\profile
-                set PATH=C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\nodejs\\;D:\\apache-ant-1.8.4\\bin;D:\\Git\\cmd;D:\\Java\\jdk1.8.0_192\\bin
-                set
-                cd NewsAndWeather
-                D:/nodejs/node.exe -v
-                D:/nodejs/node.exe build.js
+                echo set JAVA_HOME=D:\\Java\\jdk1.8.0_192 > out.cmd
+                echo set TMP=C:\\tmp >> out.cmd
+                echo set TEMP=C:\\tmp>> out.cmd
+                echo set APPDATA=C:\\tmp\\AppData>> out.cmd
+                echo set USERPROFILE=C:\\tmp\\profile>> out.cmd
+                set >> out.cmd
+                echo cd NewsAndWeather >> out.cmd
+                echo D:/nodejs/node.exe -v >> out.cmd
+                echo D:/nodejs/node.exe build.js >> out.cmd
+                cmd /c out.cmd
                 '''
    }
    
