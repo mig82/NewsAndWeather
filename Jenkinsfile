@@ -18,6 +18,7 @@ node ('kony-win') {
                 set TEMP=C:\\tmp
                 set APPDATA=C:\\tmp\\AppData
                 set USERPROFILE=C:\\tmp\\profile
+                set PATH=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\nodejs\;D:\apache-ant-1.8.4\bin;D:\Git\cmd;D:\Java\jdk1.8.0_192\bin
                 set
                 cd NewsAndWeather
                 D:/nodejs/node.exe -v
