@@ -16,10 +16,10 @@ node ('kony-win') {
          bat '''
                 echo set JAVA_HOME=D:\\Java\\jdk1.8.0_192 > out.cmd
                 echo set TMP=C:\\tmp >> out.cmd
-                echo set TEMP=C:\\tmp>> out.cmd
-                echo set APPDATA=C:\\tmp\\AppData>> out.cmd
-                echo set USERPROFILE=C:\\tmp\\profile>> out.cmd
-                set >> out.cmd
+                echo set TEMP=C:\\tmp >> out.cmd
+                echo set APPDATA=C:\\tmp\\AppData >> out.cmd
+                echo set USERPROFILE=C:\\tmp\\profile >> out.cmd
+                echo set >> out.cmd
                 echo cd NewsAndWeather >> out.cmd
                 echo D:/nodejs/node.exe -v >> out.cmd
                 echo D:/nodejs/node.exe build.js >> out.cmd
