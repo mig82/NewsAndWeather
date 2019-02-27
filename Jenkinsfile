@@ -6,6 +6,7 @@ node ('kony-win') {
    
    stage('Build') {
          bat '''
+                npm -version
                 set APPDATA=C:\\tmp\\AppData
                 set USERPROFILE=C:\\tmp\\profile
                 echo npm config set proxy http://proxy:81 > out2.cmd
