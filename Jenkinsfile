@@ -10,6 +10,8 @@ node ('kony-win') {
                 npm config set proxy http://proxy:81
                 npm config set https-proxy http://proxy:81
                 cd NewsAndWeather && npm install
+                echo done
+                cmd /c npm install
                 '''
          bat '''
                 echo set JAVA_HOME=D:\\Java\\jdk1.8.0_192 > out.cmd
