@@ -17,11 +17,10 @@ node ('kony-win') {
                 set TEMP=C:\\tmp
                 set APPDATA=C:\\tmp\\AppData
                 set USERPROFILE=C:\\tmp\\profile
-                echo cd NewsAndWeather > out.cmd
-                echo D:/nodejs/node.exe -v >> out.cmd
-                echo D:/nodejs/node.exe build.js >> out.cmd
-                echo echo done >> out.cmd
-                cmd /c out.cmd  /RUNAS:Administrator
+                set
+                cd NewsAndWeather
+                D:/nodejs/node.exe -v
+                D:/nodejs/node.exe build.js
                 '''
    }
    
