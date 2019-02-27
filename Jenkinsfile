@@ -8,9 +8,9 @@ node ('kony-win') {
          bat '''
                 set APPDATA=C:\\tmp\\AppData
                 set USERPROFILE=C:\\tmp\\profile
-                npm config set proxy http://proxy:81
-                npm config set https-proxy http://proxy:81
-                echo cd NewsAndWeather > out2.cmd
+                echo npm config set proxy http://proxy:81 > out2.cmd
+                echo npm config set https-proxy http://proxy:81 >> out2.cmd
+                echo cd NewsAndWeather >> out2.cmd
                 echo npm install >> out2.cmd
                 cmd /c out2.cmd
                 '''
