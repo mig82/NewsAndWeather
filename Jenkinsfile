@@ -21,7 +21,7 @@ node ('kony-win') {
                 echo set >> out.cmd
                 echo cd NewsAndWeather >> out.cmd
                 echo D:/nodejs/node.exe -v >> out.cmd
-                echo D:/nodejs/node.exe build.js >> out.cmd
+                echo D:/nodejs/node.exe build.js -clean >> out.cmd
                 cmd /c out.cmd
                 '''
    }
